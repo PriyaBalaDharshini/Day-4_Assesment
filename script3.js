@@ -1,17 +1,22 @@
 // Question 1 : how to compare two json have the same properties without order
 let obj1 = {
-    "name":"priya",
-    "age":"27"
+  "name": "priya",
+  "age": "27"
 };
 let obj2 = {
-    "age":"25",
-    "name":"bala"
+  "age": "25",
+  "name": "bala"
 };
-if (obj1===obj2){
-    console.log("both the objects are same");
-}else{
-    console.log("both the objects are not same");
-}
+
+//converting JSON obj to string to compare
+ var obj1Str=JSON.stringify(obj1);
+ var obj2Str=JSON.stringify(obj2);
+
+ if(obj1Str===obj2Str){
+  console.log("The objects are equal.");
+ }else{
+  console.log("The objects are not equal.")
+ }
 
 //Question 2
 var request=new XMLHttpRequest();
