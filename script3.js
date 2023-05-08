@@ -37,5 +37,5 @@ for(var i in result){
     console.log(i,result[i].region);
     console.log(i,result[i].subregion);
     console.log(i,result[i].population);
-
+}
 }
